@@ -139,7 +139,7 @@ function backdrop_command_pm_download() {
         $module_install_location = $project_path . '/' . $project;
 
         // Build the download URL.
-        $download_url = "https://github.com/backdrop-contrib/$project/releases/archive/$latest[0].zip";
+        $download_url = "https://github.com/backdrop-contrib/$project/archive/$latest[0].zip";
 
         // Get the HTTP/1.1 response to check against.
         $response = get_headers($download_url);
